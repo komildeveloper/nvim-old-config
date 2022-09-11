@@ -64,4 +64,28 @@ nvim_web_devicons.set_icon {
     cterm_color = "59",
     name = "Diff",
   },
+  [".dockerignore"] = {
+    icon = "",
+    color = "#4D5A5E",
+    cterm_color = "59",
+    name = "dockerignore",
+  },
+  ["Dockerfile"] = {
+    icon = "",
+    color = "#519ABA",
+    cterm_color = "59",
+    name = "Dockerfile",
+  },
+  ["docker-compose.yml"] = {
+    icon = "",
+    color = "#F55385",
+    cterm_color = "59",
+    name = "DockerCompose",
+  },
+  ["tsconfig.json"] = {
+    icon = "ﯤ",
+    color = "#519ABA",
+    cterm_color = "59",
+    name = "tsconfig",
+  },
 }
