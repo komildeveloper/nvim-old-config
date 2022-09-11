@@ -9,10 +9,16 @@ if not status_ok_1 then
 end
 
 local servers = {
+  "ansiblels",
+  "dockerls",
+  "gopls",
+  "bashls",
+  "sqls",
   "cssls",
   "cssmodules_ls",
   "emmet_ls",
   "html",
+  "groovyls",
   "jdtls",
   "jsonls",
   "solc",
@@ -64,6 +70,41 @@ for _, server in pairs(servers) do
   }
 
   server = vim.split(server, "@")[1]
+
+  if server == "ansiblels" then
+    local ansiblels_opts = require "user.lsp.settings.ansiblels"
+    opts = vim.tbl_deep_extend("force", ansiblels_opts, opts)
+  end
+
+  if server == "dockerls" then
+    local dockerls_opts = require "user.lsp.settings.dockerls"
+    opts = vim.tbl_deep_extend("force", dockerls_opts, opts)
+  end
+
+  if server == "bashls" then
+    local bashls_opts = require "user.lsp.settings.bashls"
+    opts = vim.tbl_deep_extend("force", bashls_opts, opts)
+  end
+
+  if server == "gopls" then
+    local gopls_opts = require "user.lsp.settings.gopls"
+    opts = vim.tbl_deep_extend("force", gopls_opts, opts)
+  end
+
+  if server == "sqls" then
+    local sqls_opts = require "user.lsp.settings.sqls"
+    opts = vim.tbl_deep_extend("force", sqls_opts, opts)
+  end
+
+  if server == "terraform_ls" then
+    local terraform_ls_opts = require "user.lsp.settings.terraform_ls"
+    opts = vim.tbl_deep_extend("force", terraform_ls_opts, opts)
+  end
+
+  if server == "groovyls" then
+    local groovyls_opts = require "user.lsp.settings.groovyls"
+    opts = vim.tbl_deep_extend("force", groovyls_opts, opts)
+  end
 
   if server == "jsonls" then
     local jsonls_opts = require "user.lsp.settings.jsonls"

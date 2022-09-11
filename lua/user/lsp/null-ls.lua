@@ -14,15 +14,25 @@ null_ls.setup {
   debug = false,
   sources = {
     formatting.prettier.with {
-      extra_filetypes = { "toml", "solidity" },
-      extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+      extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote", "--trailing-comma none", "--bracket-same-line", "--arrow-parens avoid" },
     },
     formatting.black.with { extra_args = { "--fast" } },
     formatting.stylua,
     formatting.shfmt,
+    formatting.sqlfluff,
+    formatting.gofmt,
     formatting.google_java_format,
+    formatting.rustfmt,
+    formatting.terraform_fmt,
+    formatting.npm_groovy_lint,
     -- diagnostics.flake8,
     diagnostics.shellcheck,
+    -- diagnostics.eslint,
+    diagnostics.hadolint,
+    diagnostics.luacheck,
+    diagnostics.tflint,
+    diagnostics.ansiblelint,
+    diagnostics.yamllint,
   },
 }
 
@@ -44,7 +54,7 @@ local unwrap = {
             col = col,
             end_col = end_col,
             source = "unwrap",
-            message = "hey " .. os.getenv("USER") .. ", don't forget to handle this" ,
+            message = "hey " .. os.getenv "USER" .. ", don't forget to handle this",
             severity = 2,
           })
         end
