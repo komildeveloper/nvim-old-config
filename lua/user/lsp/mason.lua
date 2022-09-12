@@ -18,7 +18,7 @@ local servers = {
   "cssmodules_ls",
   "emmet_ls",
   "html",
-  "groovyls",
+  -- "groovyls",
   "jdtls",
   "jsonls",
   "solc",
