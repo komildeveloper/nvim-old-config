@@ -10,7 +10,7 @@ local warning_orange = "#ff8800"
 -- local info_yellow = "#FFCC66"
 local hint_blue = "#4FC1FF"
 local perf_purple = "#7C3AED"
-local note_green = '#10B981'
+local note_green = "#10B981"
 
 todo_comments.setup {
   signs = true, -- show icons in the signs column

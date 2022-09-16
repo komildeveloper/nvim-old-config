@@ -14,7 +14,14 @@ null_ls.setup {
   debug = false,
   sources = {
     formatting.prettier.with {
-      extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote", "--trailing-comma none", "--bracket-same-line", "--arrow-parens avoid" },
+      extra_args = {
+        "--no-semi",
+        "--single-quote",
+        "--jsx-single-quote",
+        "--trailing-comma none",
+        "--bracket-same-line",
+        "--arrow-parens avoid",
+      },
     },
     formatting.black.with { extra_args = { "--fast" } },
     formatting.stylua,
