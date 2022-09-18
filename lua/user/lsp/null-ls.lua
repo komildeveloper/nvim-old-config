@@ -32,6 +32,7 @@ null_ls.setup {
     formatting.rustfmt,
     formatting.terraform_fmt,
     formatting.npm_groovy_lint,
+    formatting.nginx_beautifier,
     -- diagnostics.flake8,
     diagnostics.shellcheck,
     -- diagnostics.eslint,
