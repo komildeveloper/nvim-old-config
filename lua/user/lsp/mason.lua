@@ -96,9 +96,9 @@ for _, server in pairs(servers) do
     opts = vim.tbl_deep_extend("force", sqls_opts, opts)
   end
 
-  if server == "terraform_ls" then
-    local terraform_ls_opts = require "user.lsp.settings.terraform_ls"
-    opts = vim.tbl_deep_extend("force", terraform_ls_opts, opts)
+  if server == "terraformls" then
+    local terraformls_opts = require "user.lsp.settings.terraformls"
+    opts = vim.tbl_deep_extend("force", terraformls_opts, opts)
   end
 
   if server == "groovyls" then
