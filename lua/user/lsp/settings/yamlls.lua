@@ -7,6 +7,7 @@ return {
       },
       validate = true,
       schemas = {
+        ["https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta8.json"] = "skaffold.yaml",
         ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "docker-compose.yml",
         ["https://json.schemastore.org/pre-commit-config.json"] = ".pre-commit-config.yaml",
         kubernetes = "*.yaml",
