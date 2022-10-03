@@ -41,6 +41,7 @@ null_ls.setup {
     -- diagnostics.tflint,
     diagnostics.ansiblelint,
     diagnostics.yamllint,
+    diagnostics.jsonlint,
   },
 }
 
