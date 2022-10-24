@@ -169,7 +169,7 @@ else
       Octoface = " ",
     },
     ui = {
-      ArrowClosed = "",
+      ArrowClosed = "",
       ArrowOpen = "",
       Lock = " ",
       Circle = " ",
@@ -197,7 +197,7 @@ else
       Note = " ",
       BookMark = " ",
       Pencil = " ",
-      ChevronRight = "",
+      ChevronRight = "",
       Table = " ",
       Calendar = " ",
       CloudDownload = " ",

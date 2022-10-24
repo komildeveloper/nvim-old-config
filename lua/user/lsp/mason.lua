@@ -22,7 +22,7 @@ local servers = {
   "jdtls",
   "jsonls",
   "solc",
-  "solidity_ls",
+  -- "solidity_ls",
   "sumneko_lua",
   "tflint",
   "terraformls",
@@ -145,11 +145,6 @@ for _, server in pairs(servers) do
   if server == "pyright" then
     local pyright_opts = require "user.lsp.settings.pyright"
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
-  end
-
-  if server == "solc" then
-    local solc_opts = require "user.lsp.settings.solc"
-    opts = vim.tbl_deep_extend("force", solc_opts, opts)
   end
 
   if server == "emmet_ls" then
