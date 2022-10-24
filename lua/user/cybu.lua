@@ -30,5 +30,5 @@ cybu.setup {
 }
 -- vim.keymap.set("n", "<up>", "<Plug>(CybuPrev)")
 -- vim.keymap.set("n", "<down>", "<Plug>(CybuNext)")
-vim.keymap.set("n", "<S-h>", "<Plug>(CybuPrev)")
-vim.keymap.set("n", "<S-l>", "<Plug>(CybuNext)")
+vim.keymap.set("n", "<C-h>", "<Plug>(CybuPrev)")
+vim.keymap.set("n", "<C-l>", "<Plug>(CybuNext)")
