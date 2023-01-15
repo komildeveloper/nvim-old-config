@@ -31,6 +31,7 @@ local servers = {
   "yamlls",
   "bashls",
   "clangd",
+  "vimls",
   "rust_analyzer",
   "taplo",
   "zk@v0.10.1",
@@ -114,6 +115,11 @@ for _, server in pairs(servers) do
   if server == "yamlls" then
     local yamlls_opts = require "user.lsp.settings.yamlls"
     opts = vim.tbl_deep_extend("force", yamlls_opts, opts)
+  end
+
+  if server == "vimls" then
+    local vimls_opts = require "user.lsp.settings.vimls"
+    opts = vim.tbl_deep_extend("force", vimls_opts, opts)
   end
 
   if server == "sumneko_lua" then

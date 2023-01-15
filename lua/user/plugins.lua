@@ -133,6 +133,7 @@ run = "./install.sh" }
   use "lunarvim/onedarker.nvim"
   use "lunarvim/darkplus.nvim"
   use "folke/tokyonight.nvim"
+  use "LunarVim/lunar.nvim"
   -- use "lunarvim/colorschemes"
 
   -- Utility
